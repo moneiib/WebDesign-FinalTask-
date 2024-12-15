@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            margin-right: 2rem;
+            color: #f8f9fa;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 2rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f8f9fa !important;
+            font-size: 1.125rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+            transition: color 0.3s ease;
+        }
+
+        .menu-header {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .menu-header h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+        footer {
+            background-color: #343a40;
+            padding: 1rem;
+            text-align: center;
+            color: #f8f9fa;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffc107;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #f8f9fa; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107; 
+}
+
+footer .container {
+    max-width: 1140px; 
+    margin: 0 auto; 
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+footer .col-md-4 {
+    flex: 1 1 30%;
+    text-align: center; 
+}
+
+footer .social-media {
+    margin-top: 2rem;
+}
+
+footer .social-media a {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media a:hover {
+    transform: scale(1.2);
+}
+
+footer .social-media {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer .social-media a:hover i {
+    color: #ffc107;
+}
+
+footer .col-md-4 h5 {
+    margin-bottom: 0.5rem;
+}
+
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .card {
+            width: 18rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            height: 12rem;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: #fff;
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .card-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+        .btn-primary:hover {
+            background-color: #e0a800;
+            border-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">Pizzawi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="menu-header">
+            <h2>Our Delicious Menu</h2>
+        </div>
+
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pizza_Margherita_stu_spivack.jpg/640px-Pizza_Margherita_stu_spivack.jpg" alt="Margherita Pizza">
+                <div class="card-body">
+                    <h5 class="card-title">Margherita Pizza</h5>
+                    <p class="card-text">A classic pizza with fresh mozzarella, tomatoes, and basil.</p>
+                    <p class="card-price">$10.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod/images/authentic-neapolitan-margherita-pizza-royalty-free-image-1689700540.jpg?crop=0.670xw:1.00xh;0.251xw,0&resize=980:*" alt="Neapolitan pizza">
+                <div class="card-body">
+                    <h5 class="card-title">Neapolitan pizza</h5>
+                    <p class="card-text">A traditional pizza with tomatoes, mozzarella, and fresh basil.</p>
+                    <p class="card-price">$8.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="https://www.foodandwine.com/thmb/GS1lQnn25Bf-NXGXIk4O-o-jF7Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Detroit-Style-Pizza-FT-RECIPE0822-2000-729098e2718a43499739f802c77f432d.jpg" alt="Detroit style pizza">
+                <div class="card-body">
+                    <h5 class="card-title">Detroit style pizza</h5>
+                    <p class="card-text">A rectangular pizza with a thick, airy crust, topped with mozzarella and pepperoni.</p>
+                    <p class="card-price">$7.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod/images/homemade-pepperoni-sicilian-pan-pizza-royalty-free-image-1689703034.jpg?crop=0.670xw:1.00xh;0.0260xw,0&resize=980:*" alt="Sicilian pizza">
+                <div class="card-body">
+                    <h5 class="card-title">Sicilian pizza</h5>
+                    <p class="card-text">A thick, square crust pizza topped with tomatoes, mozzarella, and herbs.</p>
+                    <p class="card-price">$9.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Contact</h5>
+                        <p>Email: info@pizzawi.com</p>
+                        <p>Phone: +123 456 7890</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Location</h5>
+                        <p>123 Street, City, Country</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Copyright</h5>
+                        <p>&copy; 2024 Pizzawi. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function increaseFontSize(event) {
+            event.target.style.fontSize = "1.5rem";
+        }
+    
+        function resetFontSize(event) {
+            event.target.style.fontSize = "1rem";
+        }
+ 
+        document.querySelectorAll('.card-price').forEach(price => {
+            price.addEventListener('mouseover', increaseFontSize);
+            price.addEventListener('mouseout', resetFontSize);
+        });
+
+    </script>
+    
+</body>
+</html>

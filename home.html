@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            margin-right: 2rem;
+            color: #f8f9fa;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 2rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f8f9fa !important;
+            font-size: 1.125rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+            transition: color 0.3s ease;
+        }
+
+        .greeting {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 2rem 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .carousel-item img {
+            filter: brightness(0.8);
+            transition: filter 0.5s ease;
+            width: 100%;
+        }
+
+        .carousel-item img:hover {
+            filter: brightness(1);
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 2.5rem 0;
+        }
+
+        section h2 {
+            margin-bottom: 1.25rem;
+            color: #007bff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        section p {
+            max-width: 37.5rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 1.5rem;
+        }
+
+        footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffc107;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #f8f9fa; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107; 
+}
+
+footer .container {
+    max-width: 1140px; 
+    margin: 0 auto; 
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+footer .col-md-4 {
+    flex: 1 1 30%;
+    text-align: center; 
+}
+
+footer .social-media {
+    margin-top: 2rem;
+}
+
+footer .social-media a {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media a:hover {
+    transform: scale(1.2);
+}
+
+footer .social-media {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer .social-media a:hover i {
+    color: #ffc107;
+}
+
+footer .col-md-4 h5 {
+    margin-bottom: 0.5rem;
+}
+
+.carousel-item img {
+    width: 100%;
+     height: 20rem;
+     object-fit: cover;
+    }
+</style>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Pizzawi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="greeting" id="greeting">Welcome to Pizzawi!</div>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+      </div>
+
+      <section>
+          <h2>About Us</h2>
+          <p style="text-align: justify;">At <strong>Pizzawi</strong>, we put our heart into every meal we serve, using the finest, freshly selected ingredients to prepare the most delicious and mouth-watering pizzas. We are a family-owned restaurant that prides itself on offering a comfortable and delightful dining experience, combining quality and innovation. Whether you enjoy traditional pizzas or are looking to try new flavors, we have something to suit your taste.
+            We take pride in providing our customers with a warm and welcoming atmosphere, where you can enjoy your meal with family or friends in a cozy and unique setting. Every pizza slice is the result of our creativity and love for food, and we always strive to provide the best service to our guests. Come and share your moments with us and enjoy an unforgettable dining experience at <strong>Pizzawi</strong>!</p>
+      </section>
+
+      <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://nz.ooni.com/cdn/shop/articles/20220211142645-margherita-9920.jpg?crop=center&height=800&v=1680290572&width=800" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeo_JMT1ZvwUNMHneItLQcNgYbwRsSs2mqYA&s" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://au.gozney.com/cdn/shop/articles/Sausage_and_Peppers_Pizza_Mike_Fitzick__pizza_jew.jpg?v=1647337132&width=1500" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>      
+    </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 mb-3">
+                  <h5>Contact Us</h5>
+                  <p>Email: <a href="mailto:info@pizzawi.com">info@pizzawi.com</a></p>
+                  <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+              </div>
+      
+              <div class="col-md-4 mb-3">
+                  <h5>Location</h5>
+                  <p>123 Street, City, Country</p>
+                  <p>Visit us for a delicious experience!</p>
+              </div>
+      
+              <div class="col-md-4 mb-3">
+                  <h5>Copyright</h5>
+                  <p>&copy; 2024 Pizzawi. All rights reserved.</p>
+              </div>
+          </div>
+          <div class="text-center mt-4 social-media">
+              <p>Follow us on social media!</p>
+              <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+          </div>
+      </div>
+  </footer>
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const greetings = [
+          "Welcome to Pizzawi!",
+          "Hello! We hope you're hungry!",
+          "Welcome! Enjoy your meal!",
+          "Hi there! Ready for some pizza?"
+      ];
+
+      let currentGreetingIndex = 0;
+
+      function changeGreeting() {
+          currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
+          document.getElementById("greeting").textContent = greetings[currentGreetingIndex];
+      }
+
+      setInterval(changeGreeting, 4000);
+  </script>
+</body>
+</html>
